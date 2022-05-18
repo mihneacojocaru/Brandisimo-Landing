@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandisimo</title>
+  <link rel="shortcut icon" href="./favico.svg" type="image/svg+xml">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN CONTAINER
+  -->
+
+  <div class="container">
+
+    <!--
+      - #HEADER SECTION
+    -->
+
+    <header>
+
+      <nav class="navbar">
+
+        <a href="#" class="navbar-brand">
+          <img src="./images/logo.svg" alt="sunnyside logo">
+        </a>
+
+        <ul class="navbar-nav">
+
+          <li>
+            <a href="#about" class="nav-link">Über uns</a>
+          </li>
+
+          <li>
+            <a href="#services" class="nav-link">Services</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="nav-link">Projekte</a>
+          </li>
+
+          <li>
+            <button class="btn">Kontakt</button>
+          </li>
+
+        </ul>
+
+        <button class="nav-toggle-btn">
+          <span class="line one"></span>
+          <span class="line two"></span>
+          <span class="line three"></span>
+        </button>
+
+      </nav>
+
+    </header>
+
+
+
+
+
+    <main>
+
+      <!--
+        - #HOME SECTION
+      -->
+
+      <section class="home">
+
+        <picture>
+
+          <source media="(max-width: 768px)" srcset="./images/mobile/image-header.jpg">
+          <source media="(min-width: 769px)" srcset="./images/desktop/image-header.jpg">
+
+          <img src="./images/mobile/image-header.jpg" alt="home banner image" class="home-banner" loading="lazy">
+
+        </picture>
+
+        <div class="home-absolute-content">
+          <h1 class="main-heading">Innovative by Design</h1>
+
+          <a href="#about">
+            <img src="./images/icon-arrow-down.svg" alt="icon arrow-down" class="arrow-down" loading="lazy">
+          </a>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #ABOUT SECTION
+      -->
+
+      <section class="about" id="about">
+
+        <div class="about-img-box grid-pos-lg">
+
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-transform.jpg">
+            <source media="(min-width: 769px)" srcset="./images/desktop/image-transform.jpg">
+
+            <img src="./images/mobile/image-transform.jpg" alt="about image" class="about-img" loading="lazy">
+          </picture>
+
+        </div>
+
+        <div class="about-content">
+          <h2 class="about-h2">Meaningful Innovation</h2>
+
+          <p class="about-p">
+            Im gemeinsamen Projekt schaffen wir etwas Neues: Sinnvolle Innovationen, mit denen euer Unternehmen den nächsten Schritt geht.
+          </p>
+
+          <a href="#" class="about-link yellow">Erfahren Sie mehr</a>
+        </div>
+
+        <div class="about-img-box">
+
+          <picture>
+            <source media="(max-width: 768px)" srcset="./images/mobile/image-stand-out.jpg">
+            <source media="(min-width: 769px)" srcset="./images/desktop/image-stand-out.jpg">
+
+            <img src="./images/mobile/image-stand-out.jpg" alt="about image" class="about-img" loading="lazy">
+          </picture>
+
+        </div>
+
+        <div class="about-content">
+          <h2 class="about-h2">Transformative Projekte</h2>
+
+          <p class="about-p">
+            Führt mit uns ein Projekt durch und integriert dabei Design systematisch in eure Innovationsstrategie. Geht auch punktuell in bereits laufenden Projekten.
+          </p>
+
+          <a href="#" class="about-link pink">Erfahren Sie mehr</a>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #SERVICES SECTION
+      -->
+
+      <section class="services" id="services">
+
+        <div class="service-box">
+          <div class="img-box">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-graphic-design.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-graphic-design.jpg">
+
+              <img src="./images/mobile/image-graphic-design.jpg" alt="graphic design image" class="service-img"
+                loading="lazy">
+            </picture>
+          </div>
+
+          <div class="service-absolute-content">
+            <h3 class="service-h3 cyan">Experience Design</h3>
+
+            <p class="service-p cyan">
+              Wir optimieren systematisch bestehende Produkte und Services. Unser Team steht euch dabei für Konzeption und Umsetzung zur Verfügung.
+            </p>
+          </div>
+        </div>
+
+        <div class="service-box">
+          <div class="img-box">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-photography.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-photography.jpg">
+
+              <img src="./images/mobile/image-photography.jpg" alt="photography image" class="service-img"
+                loading="lazy">
+            </picture>
+          </div>
+
+          <div class="service-absolute-content">
+            <h3 class="service-h3 blue">Strategic Design</h3>
+
+            <p class="service-p blue">
+              Strategic Design macht Unternehmen auf allen Ebenen innovationsfähig, vom Produkt und Service über Zusammenarbeit und Prozesse bis hin zum nachhaltigen Geschäftsmodell.
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #TESTIMONIALS SECTION
+      -->
+
+      <section class="testimonials">
+
+        <h2 class="testimonials-h2">Zeugnise</h2>
+
+        <div class="testimonials-grid">
+
+          <div class="testimonials-client">
+
+            <div class="client-img-box">
+              <img src="./images/image-client1.jpeg" alt="client ben image" class="client-img" loading="lazy">
+            </div>
+
+            <p class="client-text">
+              Wir haben Brandissimo unser Vertrauen geschenkt und sie haben geliefert und dafür gesorgt, dass unsere Bedürfnisse erfüllt und Fristen immer eingehalten wurden.
+            </p>
+
+            <h4 class="client-name">Ben Conrad</h4>
+
+            <p class="client-title">Marketingleiter</p>
+
+          </div>
+
+          <div class="testimonials-client">
+
+            <div class="client-img-box">
+              <img src="./images/image-client2.jpeg" alt="client marie image" class="client-img" loading="lazy">
+            </div>
+
+            <p class="client-text">
+              Brandisimos Enthusiasmus zusammeen mit ihrem großen Interesse am Erfolg unserer Marke machten es zu einer befriedigenden und angenehmen Erfahrung.
+            </p>
+
+            <h4 class="client-name">Marie Clairece</h4>
+
+            <p class="client-title">Betriebsleiter</p>
+
+          </div>
+
+          <div class="testimonials-client">
+
+            <div class="client-img-box">
+              <img src="./images/image-client3.jpeg" alt="client dida image" class="client-img" loading="lazy">
+            </div>
+
+            <p class="client-text">
+              Unglaubliches Endergebnis! Unser Umsatz stieg um über 200%, seitdem wir mit Brandisimo zusammenarbeiteten. Sehr empfehlenswert!
+            </p>
+
+            <h4 class="client-name">Dida Gustel</h4>
+
+            <p class="client-title">Geschäftsinhaber</p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+
+
+
+      <!--
+        - #PROJECTS SECTION
+      -->
+
+      <section class="projects" id="projects">
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-milkbottles.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
+
+              <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="ice-cream" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-orange.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-orange.jpg">
+
+              <img src="./images/mobile/image-gallery-orange.jpg" alt="orange fruit" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-cone.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-cone.jpg">
+
+              <img src="./images/mobile/image-gallery-cone.jpg" alt="flower" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+        <div class="project-img-box">
+          <a href="#">
+            <picture>
+              <source media="(max-width: 768px)" srcset="./images/mobile/image-gallery-sugar-cubes.jpg">
+              <source media="(min-width: 769px)" srcset="./images/desktop/image-gallery-sugar-cubes.jpg">
+
+              <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="donut" class="project-img">
+            </picture>
+          </a>
+        </div>
+
+      </section>
+
+    </main>
+
+
+
+
+
+    <!--
+      - #FOOTER
+    -->
+
+    <footer>
+
+      <div class="footer-brand">
+        <svg width="153" height="23" viewBox="0 0 153 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.532 21.806C16.056 21.806 18.708 19.596 18.708 15.852C18.708 14.136 18.136 12.732 17.018 11.744C16.264 11.094 15.588 10.782 14.314 10.496C15.38 10.106 15.848 9.846 16.42 9.352C17.408 8.468 17.928 7.22 17.928 5.634C17.928 2.202 15.458 0.173998 11.246 0.173998H4.434C2.302 0.173998 1.938 0.173998 0.612 0.0959995C0.768 1.344 0.82 2.462 0.82 3.84V18.062C0.82 19.882 0.768 20.766 0.612 21.884C1.73 21.832 2.484 21.806 4.46 21.806H11.532ZM5.916 8.52V4.438H10.44C11.922 4.438 12.728 5.166 12.728 6.44C12.728 7.714 11.87 8.52 10.492 8.52H5.916ZM5.916 12.68H10.674C12.338 12.68 13.326 13.564 13.326 15.072C13.326 16.606 12.338 17.516 10.7 17.516H5.916V12.68ZM31.9648 5.946C30.7428 5.686 30.2228 5.634 29.3908 5.634C27.0248 5.634 25.4648 6.336 24.1908 8V5.946H19.0168C19.1728 7.064 19.2248 7.974 19.2248 9.872V17.88C19.2248 19.57 19.1728 20.506 19.0168 21.806H24.3988C24.2428 20.558 24.1908 19.57 24.1908 17.906V13.85C24.2948 12.706 24.4768 12.16 24.9708 11.536C25.7248 10.6 26.7388 10.132 28.0648 10.132C28.8708 10.132 29.5208 10.262 30.7168 10.626L31.9648 5.946ZM41.8608 11.536C39.9888 11.588 39.2088 11.614 38.1948 11.718C35.8548 11.926 34.1128 12.472 32.7868 13.408C31.5388 14.266 30.8888 15.566 30.8888 17.204C30.8888 18.634 31.3828 19.882 32.3188 20.74C33.3588 21.702 34.8408 22.17 36.8168 22.17C38.9488 22.17 40.4048 21.728 41.8608 20.61V21.806H46.9048C46.7748 20.636 46.7228 19.7 46.7228 18.114V11.094C46.7228 8.754 45.9948 7.324 44.3308 6.414C43.3168 5.868 41.4448 5.504 39.5208 5.504C36.9988 5.504 35.0748 5.998 33.6708 6.986C32.5788 7.766 32.0068 8.598 31.4868 10.132L36.4528 10.938C36.8428 9.664 37.7268 9.118 39.3908 9.118C41.1068 9.118 41.8608 9.69 41.8608 10.938V11.536ZM41.8608 15.592C41.8608 16.372 41.5228 17.074 40.9248 17.594C40.2228 18.192 39.0528 18.582 37.9868 18.582C36.6348 18.582 35.8548 18.036 35.8548 17.1C35.8548 16.346 36.4268 15.696 37.3628 15.384C38.4288 15.046 39.5468 14.916 41.8608 14.864V15.592ZM52.9673 21.806C52.8113 20.454 52.7593 19.362 52.7593 17.88V12.628C53.8773 10.808 55.1773 9.898 56.6333 9.898C57.4133 9.898 58.0113 10.158 58.3493 10.626C58.6613 11.068 58.7653 11.51 58.7653 12.55V17.88C58.7653 19.466 58.7133 20.558 58.5573 21.806H63.9653C63.8353 20.714 63.7573 19.414 63.7573 17.906V11.38C63.7573 9.326 63.3153 8.052 62.2753 7.012C61.3133 6.05 59.8833 5.556 58.0893 5.556C55.9573 5.556 54.3713 6.206 52.7333 7.766C52.7333 7.584 52.7593 7.194 52.7593 7.038V5.946H47.5853C47.7413 6.986 47.7933 8.078 47.7933 9.872V17.88C47.7933 19.492 47.7413 20.584 47.5853 21.806H52.9673ZM76.741 21.806H81.863C81.707 20.532 81.655 19.466 81.655 17.724V4.256C81.655 2.514 81.707 1.266 81.863 0.173998H76.533C76.689 1.318 76.741 2.436 76.741 4.256V6.414C76.741 6.778 76.741 7.012 76.767 7.402C75.051 6.024 73.543 5.478 71.437 5.478C69.305 5.478 67.485 6.18 66.159 7.506C64.703 8.988 63.923 11.146 63.923 13.85C63.923 19.102 66.783 22.274 71.515 22.274C73.699 22.274 75.025 21.806 76.767 20.402C76.741 20.636 76.741 20.818 76.741 20.974V21.806ZM72.659 9.456C75.025 9.456 76.689 11.276 76.689 13.798C76.689 16.372 74.999 18.296 72.685 18.296C71.723 18.296 70.787 17.932 70.163 17.308C69.383 16.554 68.967 15.358 68.967 13.876C68.967 11.146 70.397 9.456 72.659 9.456ZM82.5794 0.173998V4.074H87.8574V0.173998H82.5794ZM82.5014 5.946C82.6574 7.116 82.7094 8.182 82.7094 9.872V17.88C82.7094 19.544 82.6574 20.532 82.5014 21.806H87.9354C87.8054 20.688 87.7274 19.284 87.7274 17.88V9.872C87.7274 8.052 87.7794 7.012 87.9354 5.946H82.5014ZM88.0246 17.074C88.2846 18.322 88.5446 18.946 89.0646 19.674C90.3126 21.39 92.6266 22.274 95.9026 22.274C98.6846 22.274 100.817 21.624 102.065 20.376C102.923 19.544 103.391 18.296 103.391 16.918C103.391 15.046 102.585 13.772 100.895 12.94C99.9846 12.472 99.1786 12.238 96.6306 11.692C94.0566 11.12 93.5106 10.86 93.5106 10.158C93.5106 9.482 94.3426 9.04 95.6946 9.04C97.0986 9.04 97.7486 9.508 97.8786 10.574L102.897 10.028C102.481 8.572 102.065 7.818 101.207 7.064C99.9846 5.946 98.1386 5.4 95.6686 5.4C91.3266 5.4 88.7006 7.298 88.7006 10.418C88.7006 11.302 88.9346 12.186 89.3506 12.888C89.8446 13.668 90.7026 14.266 91.9506 14.734C92.8086 15.02 93.8226 15.28 95.7986 15.67C97.2286 15.956 97.5666 16.06 97.9306 16.268C98.2946 16.476 98.5026 16.814 98.5026 17.204C98.5026 18.01 97.6186 18.452 96.0586 18.452C94.3166 18.452 93.4326 17.854 93.1726 16.502L88.0246 17.074ZM103.632 0.173998V4.074H108.91V0.173998H103.632ZM103.554 5.946C103.71 7.116 103.762 8.182 103.762 9.872V17.88C103.762 19.544 103.71 20.532 103.554 21.806H108.988C108.858 20.688 108.78 19.284 108.78 17.88V9.872C108.78 8.052 108.832 7.012 108.988 5.946H103.554ZM115.032 21.806C114.876 20.532 114.824 19.518 114.824 17.88V12.628C115.552 10.86 116.748 9.846 118.152 9.846C118.776 9.846 119.296 10.08 119.582 10.496C119.92 10.938 120.024 11.432 120.024 12.524V17.88C120.024 19.544 119.972 20.636 119.816 21.806H125.224C125.068 20.558 125.016 19.466 125.016 17.906V12.602C125.666 10.86 126.862 9.82 128.188 9.82C129.67 9.82 130.242 10.574 130.242 12.524V17.88C130.242 19.648 130.19 20.584 130.034 21.806H135.442C135.286 20.584 135.234 19.518 135.234 17.906V11.458C135.234 7.532 133.336 5.504 129.618 5.504C127.356 5.504 125.77 6.18 124.158 7.766C123.82 7.116 123.56 6.804 123.092 6.466C122.234 5.842 121.116 5.53 119.764 5.53C117.71 5.53 116.124 6.206 114.798 7.662C114.798 7.61 114.798 7.558 114.798 7.532C114.798 7.454 114.798 7.402 114.798 7.402C114.824 7.142 114.824 7.142 114.824 7.038V5.946H109.676C109.832 6.96 109.884 7.896 109.884 9.872V17.88C109.884 19.518 109.832 20.61 109.676 21.806H115.032ZM143.936 22.404C149.11 22.404 152.542 18.972 152.542 13.798C152.542 8.65 149.214 5.348 143.962 5.348C138.71 5.348 135.382 8.65 135.382 13.85C135.382 19.076 138.71 22.404 143.936 22.404ZM143.988 9.248C146.198 9.248 147.524 10.964 147.524 13.876C147.524 16.762 146.224 18.452 143.962 18.452C141.7 18.452 140.348 16.71 140.348 13.824C140.348 10.964 141.7 9.248 143.988 9.248Z" fill="#2B7362" fill-rule="nonzero"/>
+          </svg>
+      </div>
+
+      <ul class="footer-nav">
+
+        <li>
+          <a href="#about">Über uns</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projekte</a>
+        </li>
+
+      </ul>
+
+      <div class="social-links">
+
+        <a href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+
+        <a href="#">
+          <ion-icon name="logo-pinterest"></ion-icon>
+        </a>
+
+      </div>
+      
+
+    </footer>
+    <div class="copyright">
+      ©2022 <a href="https://mihneacojocaru.github.io/"> Mihnea Cojocaru</a>
+    </div>
+  </div>
+
+
+
+
+
+  <!--
+    - custom script
+  -->
+
+  <script>
+
+    // navbar variable
+
+    const nav = document.querySelector(".navbar-nav");
+    const navToggleBtn = document.querySelector(".nav-toggle-btn");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // navbar toggle function
+    const navToggleFunc = function () {
+      nav.classList.toggle('active');
+      navToggleBtn.classList.toggle('active');
+    }
+
+    navToggleBtn.addEventListener('click', navToggleFunc);
+
+    for (let i = 0; i < navLinks.length; i++) {
+
+      navLinks[i].addEventListener('click', navToggleFunc);
+
+    }
+
+  </script>
+
+
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
